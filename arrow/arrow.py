@@ -424,7 +424,7 @@ class Arrow(object):
             the start, '[' includes the start, ')' excludes the end, and ']' includes the end.
             If the bounds are not specified, the default bound '[)' is used.
 
-        Supported frame values: year, quarter, month, week, day, hour, minute, second
+        Supported frame values: year, quarter, month, week, day, hour, minute, second, microsecond.
 
         Recognized datetime expressions:
 
@@ -447,7 +447,7 @@ class Arrow(object):
             ...
             (<Arrow [2013-05-05T12:00:00+00:00]>, <Arrow [2013-05-05T13:59:59.999999+00:00]>)
             (<Arrow [2013-05-05T14:00:00+00:00]>, <Arrow [2013-05-05T15:59:59.999999+00:00]>)
-            (<Arrow [2013-05-05T16:00:00+00:00]>, <Arrow [2013-05-05T17:59:59.999999+00:0]>)
+            (<Arrow [2013-05-05T16:00:00+00:00]>, <Arrow [2013-05-05T17:59:59.999999+00:00]>)
         """
         if interval < 1:
             raise ValueError("interval has to be a positive integer")
@@ -750,7 +750,7 @@ class Arrow(object):
             the start, '[' includes the start, ')' excludes the end, and ']' includes the end.
             If the bounds are not specified, the default bound '[)' is used.
 
-        Supported frame values: year, quarter, month, week, day, hour, minute, second.
+        Supported frame values: year, quarter, month, week, day, hour, minute, second, microsecond.
 
         Usage::
 
