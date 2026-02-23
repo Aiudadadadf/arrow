@@ -302,7 +302,7 @@ class Arrow(object):
         iterating.  As such, either call with naive objects and ``tz``, or aware objects from the
         same timezone and no ``tz``.
 
-        Supported frame values: year, quarter, month, week, day, hour, minute, second.
+        Supported frame values: year, quarter, month, week, day, hour, minute, second, microsecond.
 
         Recognized datetime expressions:
 
@@ -378,7 +378,7 @@ class Arrow(object):
         iterating.  As such, either call with naive objects and ``tz``, or aware objects from the
         same timezone and no ``tz``.
 
-        Supported frame values: year, quarter, month, week, day, hour, minute, second.
+        Supported frame values: year, quarter, month, week, day, hour, minute, second, microsecond.
 
         Recognized datetime expressions:
 
